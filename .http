@@ -1,0 +1,10 @@
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+  "first_name": "Dianna",
+  "last_name": "Joseph",
+  "middle_name": "K",
+  "gender": "female",
+  "roles": ["user"]
+}
