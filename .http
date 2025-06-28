@@ -2,9 +2,29 @@ POST http://localhost:8000/api/users
 Content-Type: application/json
 
 {
+  "id": "3fa85f64-5717-4562-b3fc-2c333f66afa6",
   "first_name": "Dianna",
   "last_name": "Joseph",
-  "middle_name": "K",
+  "middle_name": "Marie",
   "gender": "female",
   "roles": ["user"]
 }
+
+###
+DELETE http://localhost:8000/api/users/3fa85f64-5717-4562-b3fc-2c333f66afa6
+
+###
+PUT http://localhost:8000/api/users/3fa85f64-5717-4562-b3fc-2c333f66afa6
+Content-Type: application/json    
+
+{
+  "id": "3fa85f64-5717-4562-b3fc-2c333f66afa6",
+  "first_name": "Dianna",
+  "last_name": "Smith",
+  "middle_name": "Marie",
+  "gender": "female",
+  "roles": ["user","student"]
+}
+
+###
+GET http://localhost:8000/api/users/
